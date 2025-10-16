@@ -1,0 +1,11 @@
+## 📁 model/
+
+This folder contains all the scripts responsible for **training**, **saving**, and **using** the machine learning model for laptop price prediction.
+
+- **`model_training.py`**  
+  This script handles the entire process of model creation. It loads the dataset, performs data splitting, trains the model (using algorithms like Random Forest or XGBoost), evaluates its performance with metrics such as R², MAE, and RMSE, and finally saves the trained model as a `.pkl` file using `joblib`.
+
+- **`predict_price.py`**  
+  This script loads the saved model and predicts the price of a laptop based on given specifications such as RAM, processor, storage, brand, and weight. It can be used directly or integrated with a web application (like Flask or Streamlit) for real-time predictions.
+
+> ⚙️ The **model** folder plays a key role in connecting the data preprocessing and deployment stages, ensuring smooth and accurate laptop price predictions.
